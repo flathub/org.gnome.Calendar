@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Calendar",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.24",
+    "runtime-version": "3.26",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-calendar",
@@ -10,6 +10,7 @@
         "--share=ipc", "--socket=x11",
         "--socket=wayland",
         "--share=network",
+        "--talk-name=org.gnome.ControlCenter",
         "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook9",
         "--talk-name=org.gnome.evolution.dataserver.Calendar7",
@@ -37,8 +38,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.24/gnome-online-accounts-3.24.1.tar.xz",
-                    "sha256": "0a30ab4e4e8015fae707c3b38f05163299743725a36136076fce993c2b8ef651"
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.26/gnome-online-accounts-3.26.0.tar.xz",
+                    "sha256": "5cab736751c19efca762c0459e3358255d6662a6f4f27728cd02ea7b024e52ac"
                 }
             ]
         },
@@ -51,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v1.0.1/libical-1.0.1.tar.gz",
-                    "sha256": "089ce3c42d97fbd7a5d4b3c70adbdd82115dd306349c1f5c46a8fb3f8c949592"
+                    "url": "https://github.com/libical/libical/releases/download/v2.0.0/libical-2.0.0.tar.gz",
+                    "sha256": "654c11f759c19237be39f6ad401d917e5a05f36f1736385ed958e60cf21456da"
                 }
             ]
         },
@@ -81,8 +82,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.24/evolution-data-server-3.24.4.tar.xz",
-                    "sha256": "c8527da0ffe8e81ad4192411ea4a9b99f8870e70565e187136426252c103a9d0"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.26/evolution-data-server-3.26.1.tar.xz",
+                    "sha256": "ea207a3abd5e7bb8ccaa88741de7715a128083efdf8296af2c3a2fb8d072a4b3"
                 }
             ]
         },
@@ -91,8 +92,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/3.24/gnome-calendar-3.24.3.tar.xz",
-                    "sha256": "3ecb4074f44cb6c883f81f93ebde2fa3890107f8e06740495be9f942190ff3ec"
+                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.26.1.tar.xz",
+                    "sha256": "c2996987670c6c2232f30d0de0008aebbddaccbce8359d2415de33e8747a9d5c"
                 },
                 {
                     "type": "patch",
