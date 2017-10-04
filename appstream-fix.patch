@@ -1,10 +1,11 @@
-diff -up gnome-calendar-3.24.3/data/appdata/org.gnome.Calendar.appdata.xml.screenshot gnome-calendar-3.24.3/data/appdata/org.gnome.Calendar.appdata.xml
---- gnome-calendar-3.24.3/data/appdata/org.gnome.Calendar.appdata.xml.screenshot	2017-07-29 18:02:46.670714804 +0200
-+++ gnome-calendar-3.24.3/data/appdata/org.gnome.Calendar.appdata.xml	2017-07-29 18:08:29.931163799 +0200
-@@ -306,7 +306,7 @@
-       <caption xml:lang="uk">Керування календарем</caption>
-       <caption xml:lang="zh_CN">日历管理 </caption>
-       <caption xml:lang="zh_TW">行事曆管理</caption>
+diff --git a/data/appdata/org.gnome.Calendar.appdata.xml.in b/data/appdata/org.gnome.Calendar.appdata.xml.in
+index 2c26340..e61104f 100644
+--- a/data/appdata/org.gnome.Calendar.appdata.xml.in
++++ b/data/appdata/org.gnome.Calendar.appdata.xml.in
+@@ -33,7 +33,7 @@
+     </screenshot>
+     <screenshot>
+       <caption>Calendar management</caption>
 -      <image width="1200" height="675">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/calendar-management.png</image>
 +      <image width="1202" height="681">https://git.gnome.org/browse/gnome-calendar/plain/data/appdata/calendar-management.png</image>
      </screenshot>
