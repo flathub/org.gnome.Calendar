@@ -99,6 +99,10 @@
                 {
                     "type": "patch",
                     "path": "appstream-fix.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Use-the-correct-name-for-the-appdata-file.patch"
                 }
             ]
         }

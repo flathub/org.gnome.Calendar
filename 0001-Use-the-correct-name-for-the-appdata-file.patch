@@ -1,0 +1,26 @@
+From ad820c46ef60667f5333866cf8aa443570966c36 Mon Sep 17 00:00:00 2001
+From: Mathieu Bridon <bochecha@daitauha.fr>
+Date: Thu, 5 Oct 2017 01:42:11 +0200
+Subject: [PATCH] Use the correct name for the appdata file
+
+As it is, Flatpak doesn't find the file and the appstream stuff doesn't
+get built.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=788540
+---
+ data/appdata/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/appdata/meson.build b/data/appdata/meson.build
+index bdcc3c3..68f3601 100644
+--- a/data/appdata/meson.build
++++ b/data/appdata/meson.build
+@@ -1,4 +1,4 @@
+-info = 'org.gnome.Calendar.metainfo.xml'
++info = 'org.gnome.Calendar.appdata.xml'
+ 
+ i18n.merge_file(
+   info,
+-- 
+2.13.6
+
