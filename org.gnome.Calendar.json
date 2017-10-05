@@ -93,12 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.26.1.tar.xz",
-                    "sha256": "c2996987670c6c2232f30d0de0008aebbddaccbce8359d2415de33e8747a9d5c"
-                },
-                {
-                    "type": "patch",
-                    "path": "appstream-fix.patch"
+                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.26.2.tar.xz",
+                    "sha256": "19a2c737b9662be926fb68e7dc731d94c523d23fa7a49e435e6a0346770dc50e"
                 }
             ]
         }
