@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Calendar",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.26",
+    "runtime-version": "3.28",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-calendar",
@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.26.2.tar.xz",
-                    "sha256": "19a2c737b9662be926fb68e7dc731d94c523d23fa7a49e435e6a0346770dc50e"
+                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.28.0.tar.xz",
+                    "sha256": "fae1eb831e3143670b38f2e8ea971d92cf99f038ce8d7848f0b0c8c35f36adf8"
                 }
             ]
         }
