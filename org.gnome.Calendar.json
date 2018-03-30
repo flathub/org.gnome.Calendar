@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Calendar",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.26",
+    "runtime-version": "3.28",
     "branch": "stable",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-calendar",
@@ -11,6 +11,7 @@
         "--socket=wayland",
         "--share=network",
         "--system-talk-name=org.freedesktop.login1",
+        "--system-talk-name=org.freedesktop.GeoClue2",
         "--talk-name=org.gnome.ControlCenter",
         "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook9",
@@ -39,8 +40,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.26/gnome-online-accounts-3.26.0.tar.xz",
-                    "sha256": "5cab736751c19efca762c0459e3358255d6662a6f4f27728cd02ea7b024e52ac"
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.28/gnome-online-accounts-3.28.0.tar.xz",
+                    "sha256": "87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c"
                 }
             ]
         },
@@ -83,18 +84,60 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.26/evolution-data-server-3.26.1.tar.xz",
-                    "sha256": "ea207a3abd5e7bb8ccaa88741de7715a128083efdf8296af2c3a2fb8d072a4b3"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.28/evolution-data-server-3.28.0.tar.xz",
+                    "sha256": "fb9546d5fedbb00de6c6cec3850f2cdfea234af221e645d15721686a8df77ef9"
+                }
+            ]
+        },
+        {
+            "name" : "libdazzle",
+            "config-opts" : [
+                "--libdir=/app/lib",
+                "--buildtype=release"
+            ],
+            "buildsystem" : "meson",
+            "builddir" : true,
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.28/libdazzle-3.28.0.tar.xz",
+                    "sha256": "57aa6fe2ea534d9faa17fa105109ed5c38886d3812fe671d3ecc56fb4e3c037f"
+                }
+            ]
+        },
+        {
+            "name": "geocode-glib",
+            "config-opts": ["--disable-static"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/geocode-glib/3.25/geocode-glib-3.25.4.1.tar.xz",
+                    "sha256": "f10169262c313dfaa21acf00687c01e0aaf52983524648e8b9e8e42c052dd778"
+                }
+            ]
+        },
+        {
+            "name": "libgweather",
+            "buildsystem": "meson",
+            "config-opts": [
+               "-Denable_vala=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.1.tar.xz",
+                    "sha256": "157a8388532a751b36befff424b11ed913b2c43689b62cd2060f6847eb730be3"
                 }
             ]
         },
         {
             "name": "gnome-calendar",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/3.26/gnome-calendar-3.26.2.tar.xz",
-                    "sha256": "19a2c737b9662be926fb68e7dc731d94c523d23fa7a49e435e6a0346770dc50e"
+                    "url": "https://download.gnome.org/sources/gnome-calendar/3.28/gnome-calendar-3.28.0.tar.xz",
+                    "sha256": "fae1eb831e3143670b38f2e8ea971d92cf99f038ce8d7848f0b0c8c35f36adf8"
                 }
             ]
         }
