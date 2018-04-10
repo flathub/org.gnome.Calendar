@@ -1,74 +1,118 @@
 {
-    "app-id": "org.gnome.Calendar",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
-    "branch": "stable",
-    "sdk": "org.gnome.Sdk",
-    "command": "gnome-calendar",
-    "tags": [],
-    "finish-args": [
-        "--share=ipc", "--socket=x11",
-        "--socket=wayland",
+    "app-id" : "org.gnome.Calendar",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "3.28",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "gnome-calendar",
+    "finish-args" : [
+        "--share=ipc",
         "--share=network",
+        "--socket=x11",
+        "--socket=wayland",
         "--system-talk-name=org.freedesktop.login1",
         "--system-talk-name=org.freedesktop.GeoClue2",
+        "--talk-name=ca.desrt.dconf",
         "--talk-name=org.gnome.ControlCenter",
         "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook9",
         "--talk-name=org.gnome.evolution.dataserver.Calendar7",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=home",
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "build-options" : {
-        "cflags": "-O2 -g",
-        "cxxflags": "-O2 -g",
-        "env": {
-            "V": "1"
+        "cflags" : "-O2 -g",
+        "cxxflags" : "-O2 -g",
+        "env" : {
+            "V" : "1"
         }
     },
-    "cleanup": ["/include", "/lib/pkgconfig",
-                "/share/pkgconfig", "/share/aclocal",
-                "/man", "/share/man", "/share/gtk-doc",
-                "/share/vala",
-                "*.la", "*.a"],
-    "modules": [
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/pkgconfig",
+        "/share/aclocal",
+        "/man",
+        "/share/man",
+        "/share/gtk-doc",
+        "*.la",
+        "*.a"
+    ],
+    "modules" : [
         {
-            "name": "gnome-online-accounts",
-            "config-opts": ["--disable-telepathy", "--disable-documentation", "--disable-backend"],
-            "sources": [
+            "name" : "gnome-online-accounts",
+            "config-opts" : [
+                "--disable-telepathy",
+                "--disable-documentation",
+                "--disable-backend"
+            ],
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.28/gnome-online-accounts-3.28.0.tar.xz",
-                    "sha256": "87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.28/gnome-online-accounts-3.28.0.tar.xz",
+                    "sha256" : "87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c"
                 }
             ]
         },
         {
-            "name": "libical",
-            "cleanup": [ "/lib/cmake"],
-            "buildsystem": "cmake",
-            "config-opts": [ "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
-                             "-DBUILD_SHARED_LIBS:BOOL=ON" ],
-            "sources": [
+            "name" : "libical",
+            "cleanup" : [
+                "/lib/cmake"
+            ],
+            "buildsystem" : "cmake",
+            "config-opts" : [
+                "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
+                "-DBUILD_SHARED_LIBS:BOOL=ON"
+            ],
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v2.0.0/libical-2.0.0.tar.gz",
-                    "sha256": "654c11f759c19237be39f6ad401d917e5a05f36f1736385ed958e60cf21456da"
+                    "type" : "archive",
+                    "url" : "https://github.com/libical/libical/releases/download/v3.0.1/libical-3.0.1.tar.gz",
+                    "sha256" : "7f32a889df542592a357a73ff5f3bd7b5058450c1a3fb272b1c9a69e32d9ed10"
                 }
             ]
         },
         {
-            "name": "evolution-data-server",
-            "cleanup": [
+            "name" : "geocode-glib",
+            "buildsystem" : "meson",
+            "builddir" : true,
+            "config-opts" : [
+                "--libdir=/app/lib"
+            ],
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/geocode-glib/3.25/geocode-glib-3.25.4.tar.xz",
+                    "sha256" : "75ea9c2a1bf108651521c4274132b0f424cf950b3fdc226852bc3089d97664dd"
+                }
+            ]
+        },
+        {
+            "name" : "libgweather",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "--libdir=/app/lib"
+            ],
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.1.tar.xz",
+                    "sha256" : "157a8388532a751b36befff424b11ed913b2c43689b62cd2060f6847eb730be3"
+                }
+            ]
+        },
+        {
+            "name" : "evolution-data-server",
+            "cleanup" : [
                 "/lib/cmake",
                 "/lib/evolution-data-server/*-backends",
                 "/libexec",
                 "/share/dbus-1/services"
             ],
-            "buildsystem": "cmake",
-            "config-opts": [
+            "config-opts" : [
                 "-DENABLE_GTK=ON",
                 "-DENABLE_GOOGLE_AUTH=OFF",
                 "-DENABLE_UOA=OFF",
@@ -81,11 +125,12 @@
                 "-DENABLE_GTK_DOC=OFF",
                 "-DENABLE_EXAMPLES=OFF"
             ],
-            "sources": [
+            "buildsystem" : "cmake",
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.28/evolution-data-server-3.28.0.tar.xz",
-                    "sha256": "fb9546d5fedbb00de6c6cec3850f2cdfea234af221e645d15721686a8df77ef9"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/evolution-data-server/3.28/evolution-data-server-3.28.1.tar.xz",
+                    "sha256" : "6b04fc1adaba0541546267a77f1bc5aa549fe85eb9933492fdf994c69fa36989"
                 }
             ]
         },
@@ -93,51 +138,26 @@
             "name" : "libdazzle",
             "config-opts" : [
                 "--libdir=/app/lib",
-                "--buildtype=release"
+                "--buildtype=debugoptimized"
             ],
             "buildsystem" : "meson",
             "builddir" : true,
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.28/libdazzle-3.28.0.tar.xz",
-                    "sha256": "57aa6fe2ea534d9faa17fa105109ed5c38886d3812fe671d3ecc56fb4e3c037f"
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.28/libdazzle-3.28.1.tar.xz",
+                    "sha256" : "627cdbd1fda815ad8308f8a01ba9a23d4a8fd11cc783e40d6eadbffba2bc4912"
                 }
             ]
         },
         {
-            "name": "geocode-glib",
-            "config-opts": ["--disable-static"],
-            "sources": [
+            "name" : "gnome-calendar",
+            "buildsystem" : "meson",
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/geocode-glib/3.25/geocode-glib-3.25.4.1.tar.xz",
-                    "sha256": "f10169262c313dfaa21acf00687c01e0aaf52983524648e8b9e8e42c052dd778"
-                }
-            ]
-        },
-        {
-            "name": "libgweather",
-            "buildsystem": "meson",
-            "config-opts": [
-               "-Denable_vala=false"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.1.tar.xz",
-                    "sha256": "157a8388532a751b36befff424b11ed913b2c43689b62cd2060f6847eb730be3"
-                }
-            ]
-        },
-        {
-            "name": "gnome-calendar",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/3.28/gnome-calendar-3.28.0.tar.xz",
-                    "sha256": "fae1eb831e3143670b38f2e8ea971d92cf99f038ce8d7848f0b0c8c35f36adf8"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.28/gnome-calendar-3.28.1.tar.xz",
+                    "sha256" : "06e7d5d47194dea9f4121f9b9859201e3406a680b35cf6f77fb2502cadfd4cc9"
                 }
             ]
         }
