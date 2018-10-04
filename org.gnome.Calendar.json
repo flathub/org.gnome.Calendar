@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.28",
+    "runtime-version" : "3.30",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -63,7 +63,7 @@
             "cleanup" : [
                 "/lib/cmake"
             ],
-            "buildsystem" : "cmake",
+            "buildsystem" : "cmake-ninja",
             "config-opts" : [
                 "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
                 "-DBUILD_SHARED_LIBS:BOOL=ON"
@@ -124,9 +124,10 @@
                 "-DENABLE_INTROSPECTION=ON",
                 "-DENABLE_INSTALLED_TESTS=OFF",
                 "-DENABLE_GTK_DOC=OFF",
-                "-DENABLE_EXAMPLES=OFF"
+                "-DENABLE_EXAMPLES=OFF",
+                "-DWITH_LIBDB=OFF"
             ],
-            "buildsystem" : "cmake",
+            "buildsystem" : "cmake-ninja",
             "sources" : [
                 {
                     "type" : "archive",
