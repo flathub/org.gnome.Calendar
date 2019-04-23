@@ -109,6 +109,7 @@
                 "-DENABLE_GTK=ON",
                 "-DENABLE_UOA=OFF",
                 "-DENABLE_GOA=ON",
+                "-DENABLE_GOOGLE=OFF",
                 "-DENABLE_EXAMPLES=OFF",
                 "-DENABLE_INTROSPECTION=OFF",
                 "-DENABLE_VALA_BINDINGS=OFF",
