@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.30",
+    "runtime-version" : "3.32",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -46,8 +46,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.30/gnome-online-accounts-3.30.0.tar.xz",
-                    "sha256" : "27d9d88942aa02a1f8d003dfe515483d8483f216ba1e297a8ef67a42cf4bcfc3"
+                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.32/gnome-online-accounts-3.32.0.tar.xz",
+                    "sha256" : "1c19e65771c8d16fa0016ab70d9a1ee2b75a84aeeedd24527a4e41b132e8d4aa"
                 }
             ]
         },
@@ -87,46 +87,44 @@
         {
             "name" : "libgweather",
             "buildsystem" : "meson",
-            "config-opts" : [
-                "--libdir=/app/lib"
+            "cleanup" : [
+                "/share/gtk-doc"
             ],
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libgweather/3.28/libgweather-3.28.2.tar.xz",
-                    "sha256" : "081ce81653afc614e12641c97a8dd9577c524528c63772407ae2dbcde12bde75"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgweather/3.32/libgweather-3.32.1.tar.xz",
+                    "sha256": "1c2218ed71230dd2c550ca4fd3dab53e2f2831d38982c213575f34e48d68e980"
                 }
             ]
         },
         {
             "name" : "evolution-data-server",
-            "cleanup" : [
-                "/lib/cmake",
-                "/lib/evolution-data-server/*-backends",
-                "/libexec",
-                "/share/dbus-1/services"
-            ],
+            "buildsystem" : "cmake-ninja",
+            "cleanup" : [ "/share/GConf" ],
             "config-opts" : [
+                "-DENABLE_FILE_LOCKING=fcntl",
+                "-DENABLE_DOT_LOCKING=OFF",
+                "-DENABLE_OAUTH2=ON",
                 "-DENABLE_GTK=ON",
-                "-DENABLE_GOOGLE_AUTH=OFF",
                 "-DENABLE_UOA=OFF",
-                "-DENABLE_GOOGLE=OFF",
-                "-DENABLE_VALA_BINDINGS=ON",
-                "-DENABLE_WEATHER=OFF",
-                "-DWITH_OPENLDAP=OFF",
-                "-DENABLE_INTROSPECTION=ON",
+                "-DENABLE_GOA=ON",
+                "-DENABLE_EXAMPLES=OFF",
+                "-DENABLE_INTROSPECTION=OFF",
+                "-DENABLE_VALA_BINDINGS=OFF",
                 "-DENABLE_INSTALLED_TESTS=OFF",
                 "-DENABLE_GTK_DOC=OFF",
-                "-DENABLE_EXAMPLES=OFF",
+                "-DWITH_PRIVATE_DOCS=OFF",
+                "-DWITH_PHONENUMBER=OFF",
+                "-DWITH_SYSTEMDUSERUNITDIR=OFF",
                 "-DWITH_LIBDB=OFF"
             ],
-            "buildsystem" : "cmake-ninja",
             "sources" : [
-                {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/evolution-data-server/3.30/evolution-data-server-3.30.1.tar.xz",
-                    "sha256" : "a4221ece8bed77eef4cbdd91a4ba9a786068c93bc52e0c9d7aca525e620dd60e"
-                }
+               {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.32/evolution-data-server-3.32.1.tar.xz",
+                    "sha256": "cdafd519307ec9a1ee0e613674330fd92cb8afab68b5d18e55e7ff4994686849"
+               }
             ]
         },
         {
@@ -140,8 +138,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.30/libdazzle-3.30.1.tar.xz",
-                    "sha256" : "dcc96520e76692aa442206c2bb5971fa28f1279290b7e520e4078ba603d41fb3"
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.32/libdazzle-3.32.1.tar.xz",
+                    "sha256" : "238da19fdcc3ae9bb0c2d781d099fb8c6ec70c4dd3dffad80d230344ecc3f972"
                 }
             ]
         },
@@ -151,8 +149,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.30/gnome-calendar-3.30.0.tar.xz",
-                    "sha256" : "f9b062764d3ad90e310718bfba4e8d4a64be22d3bfbfc10d66a46b61b4b9771a"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.32/gnome-calendar-3.32.0.tar.xz",
+                    "sha256" : "447b810c27c64c9c412dcc8d241d1811103e3e3dfa5276c6b762b0cda80ede3b"
                 }
             ]
         }
