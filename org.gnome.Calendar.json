@@ -117,7 +117,8 @@
                 "-DWITH_PRIVATE_DOCS=OFF",
                 "-DWITH_PHONENUMBER=OFF",
                 "-DWITH_SYSTEMDUSERUNITDIR=OFF",
-                "-DWITH_LIBDB=OFF"
+                "-DWITH_LIBDB=OFF",
+                "-DWITH_OPENLDAP=OFF"
             ],
             "sources" : [
                {
