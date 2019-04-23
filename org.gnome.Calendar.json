@@ -151,8 +151,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.32/gnome-calendar-3.32.0.tar.xz",
-                    "sha256" : "447b810c27c64c9c412dcc8d241d1811103e3e3dfa5276c6b762b0cda80ede3b"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.32/gnome-calendar-3.32.1.tar.xz",
+                    "sha256" : "74a7b84749687c90f6b3e529815ca8f2e59a97e483dd05c9903edc6d914937f2"
                 }
             ]
         }
