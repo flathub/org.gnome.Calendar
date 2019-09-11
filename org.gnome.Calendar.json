@@ -1,24 +1,26 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.34",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
     "finish-args" : [
         "--share=ipc",
         "--share=network",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--system-talk-name=org.freedesktop.login1",
+        "--system-talk-name=org.freedesktop.timedate1",
         "--system-talk-name=org.freedesktop.GeoClue2",
         "--talk-name=ca.desrt.dconf",
         "--talk-name=org.gnome.ControlCenter",
-        "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook9",
-        "--talk-name=org.gnome.evolution.dataserver.Calendar7",
+        "--talk-name=org.gnome.evolution.dataserver.Calendar8",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*",
+        "--talk-name=org.gnome.OnlineAccounts",
+        "--talk-name=org.gnome.SettingsDaemon.Color",
         "--filesystem=home",
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro",
@@ -46,26 +48,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.32/gnome-online-accounts-3.32.0.tar.xz",
-                    "sha256" : "1c19e65771c8d16fa0016ab70d9a1ee2b75a84aeeedd24527a4e41b132e8d4aa"
-                }
-            ]
-        },
-        {
-            "name" : "libical",
-            "cleanup" : [
-                "/lib/cmake"
-            ],
-            "buildsystem" : "cmake-ninja",
-            "config-opts" : [
-                "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
-                "-DBUILD_SHARED_LIBS:BOOL=ON"
-            ],
-            "sources" : [
-                {
-                    "type" : "archive",
-                    "url" : "https://github.com/libical/libical/releases/download/v3.0.4/libical-3.0.4.tar.gz",
-                    "sha256" : "72b216e10233c3f60cb06062facf41f3b0f70615e5a60b47f9853341a0d5d145"
+                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.0.tar.xz",
+                    "sha256" : "c44fbce4eeb54703a2ab4954d54f11eb29666f9cf61b5275b9fe0fc033377f57"
                 }
             ]
         },
@@ -79,8 +63,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.0.tar.xz",
-                    "sha256" : "ea4086b127050250c158beff28dbcdf81a797b3938bb79bbaaecc75e746fbeee"
+                    "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.1.tar.xz",
+                    "sha256" : "5baa6ab76a76c9fc567e4c32c3af2cd1d1784934c255bc5a62c512e6af6bde1c"
                 }
             ]
         },
@@ -93,8 +77,41 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.32/libgweather-3.32.1.tar.xz",
-                    "sha256": "1c2218ed71230dd2c550ca4fd3dab53e2f2831d38982c213575f34e48d68e980"
+                    "url": "https://download.gnome.org/sources/libgweather/3.33/libgweather-3.33.92.tar.xz",
+                    "sha256": "7f4ee5e954dc19d1591ca704d8edf82689d0d49beffe91fba24b019a693a3ef1"
+                }
+            ]
+        },
+        {
+            "name" : "libical",
+            "cleanup" : [
+                "/lib/cmake"
+            ],
+            "buildsystem" : "cmake-ninja",
+            "config-opts" : [
+                "-DCMAKE_INSTALL_LIBDIR:PATH=/app/lib",
+                "-DBUILD_SHARED_LIBS=On",
+                "-DICAL_BUILD_DOCS=False",
+                "-DWITH_CXX_BINDINGS=False"
+            ],
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://github.com/libical/libical/releases/download/v3.0.5/libical-3.0.5.tar.gz",
+                    "sha256" : "7ad550c8c49c9b9983658e3ab3e68b1eee2439ec17b169a6b1e6ecb5274e78e6"
+                }
+            ]
+        },
+        {
+            "name": "intltool",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                    "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
                 }
             ]
         },
@@ -124,8 +141,8 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.32/evolution-data-server-3.32.1.tar.xz",
-                    "sha256": "cdafd519307ec9a1ee0e613674330fd92cb8afab68b5d18e55e7ff4994686849"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.34/evolution-data-server-3.34.0.tar.xz",
+                    "sha256": "fb9db0a824ae01ecc63c82cf8e503fecdcba7118b919f04bda7d8d91f3e486cf"
                }
             ]
         },
@@ -140,8 +157,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.32/libdazzle-3.32.1.tar.xz",
-                    "sha256" : "238da19fdcc3ae9bb0c2d781d099fb8c6ec70c4dd3dffad80d230344ecc3f972"
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.0.tar.xz",
+                    "sha256" : "8d8524bcb2acd6bda0fb3efe96f0bf3e8860ca18eed1fc55dc1c27756b49637c"
                 }
             ]
         },
@@ -151,8 +168,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.32/gnome-calendar-3.32.1.tar.xz",
-                    "sha256" : "74a7b84749687c90f6b3e529815ca8f2e59a97e483dd05c9903edc6d914937f2"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.34/gnome-calendar-3.34.0.tar.xz",
+                    "sha256" : "eb90905a07bc4c8455d83b8f4aa33fc1dabc9c40fe2bee1e5dc2db3bbac6713d"
                 }
             ]
         }
