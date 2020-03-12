@@ -139,6 +139,24 @@
             ]
         },
         {
+        "name": "libhandy",
+        "buildsystem": "meson",
+        "config-opts": [
+            "-Dglade_catalog=disabled",
+            "-Dtests=false",
+            "-Dexamples=false"
+        ],
+        "sources": [
+            {
+            "type": "git",
+            "url": "https://source.puri.sm/Librem5/libhandy.git",
+            "tag": "v0.0.13",
+            "commit": "7a193d7692c9c76a1a94f17c4d30b585f77d177c"
+            }
+        ],
+        "cleanup": ["/bin"]
+        },
+        {
             "name" : "gnome-calendar",
             "buildsystem" : "meson",
             "sources" : [
