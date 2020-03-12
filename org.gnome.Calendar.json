@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.34",
+    "runtime-version" : "3.36",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -49,23 +49,19 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.34/gnome-online-accounts-3.34.0.tar.xz",
-                    "sha256" : "c44fbce4eeb54703a2ab4954d54f11eb29666f9cf61b5275b9fe0fc033377f57"
+                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.36.0.tar.xz",
+                    "sha256" : "1c8f62990833ca41188dbb80c5e99d99b57a62608ca675bbcd37bc2244742f2e"
                 }
             ]
         },
         {
             "name" : "geocode-glib",
             "buildsystem" : "meson",
-            "builddir" : true,
-            "config-opts" : [
-                "--libdir=/app/lib"
-            ],
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.1.tar.xz",
-                    "sha256" : "5baa6ab76a76c9fc567e4c32c3af2cd1d1784934c255bc5a62c512e6af6bde1c"
+                    "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
+                    "sha256" : "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1"
                 }
             ]
         },
@@ -78,8 +74,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.33/libgweather-3.33.92.tar.xz",
-                    "sha256": "7f4ee5e954dc19d1591ca704d8edf82689d0d49beffe91fba24b019a693a3ef1"
+                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.0.tar.xz",
+                    "sha256": "d2ffeec01788d03d1bbf35113fc2f054c6c3600721088f827bcc31e5c603a32d"
                 }
             ]
         },
@@ -98,8 +94,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/libical/libical/releases/download/v3.0.5/libical-3.0.5.tar.gz",
-                    "sha256" : "7ad550c8c49c9b9983658e3ab3e68b1eee2439ec17b169a6b1e6ecb5274e78e6"
+                    "url" : "https://github.com/libical/libical/releases/download/v3.0.8/libical-3.0.8.tar.gz",
+                    "sha256" : "09fecacaf75ba5a242159e3a9758a5446b5ce4d0ab684f98a7040864e1d1286f"
                 }
             ]
         },
@@ -129,24 +125,19 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.34/evolution-data-server-3.34.0.tar.xz",
-                    "sha256": "fb9db0a824ae01ecc63c82cf8e503fecdcba7118b919f04bda7d8d91f3e486cf"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.0.tar.xz",
+                    "sha256": "d4d70e6658fb9e1f85639dcff315bbdddd3aa2de2ad069b1776af3fb9e9598ec"
                }
             ]
         },
         {
             "name" : "libdazzle",
-            "config-opts" : [
-                "--libdir=/app/lib",
-                "--buildtype=debugoptimized"
-            ],
             "buildsystem" : "meson",
-            "builddir" : true,
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.34/libdazzle-3.34.0.tar.xz",
-                    "sha256" : "8d8524bcb2acd6bda0fb3efe96f0bf3e8860ca18eed1fc55dc1c27756b49637c"
+                    "url" : "https://download.gnome.org/sources/libdazzle/3.36/libdazzle-3.36.0.tar.xz",
+                    "sha256" : "82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958"
                 }
             ]
         },
@@ -156,8 +147,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.34/gnome-calendar-3.34.0.tar.xz",
-                    "sha256" : "eb90905a07bc4c8455d83b8f4aa33fc1dabc9c40fe2bee1e5dc2db3bbac6713d"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.36/gnome-calendar-3.36.0.tar.xz",
+                    "sha256" : "024f23c7435bdc38e7d740bb3b270491fbe3f4248c6592b40f1ce9811c26beb3"
                 }
             ]
         }
