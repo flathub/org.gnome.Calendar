@@ -39,7 +39,6 @@
         {
             "name" : "gnome-online-accounts",
             "config-opts" : [
-                "--disable-telepathy",
                 "--disable-documentation",
                 "--disable-backend"
             ],
@@ -122,8 +121,8 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.0.tar.xz",
-                    "sha256": "d4d70e6658fb9e1f85639dcff315bbdddd3aa2de2ad069b1776af3fb9e9598ec"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.1.tar.xz",
+                    "sha256": "13122b2edddb98306207d2a35d5ccae25a90702769ca0a0b51653b5984986796"
                }
             ]
         },
