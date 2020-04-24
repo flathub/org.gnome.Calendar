@@ -105,7 +105,6 @@
                 "-DENABLE_DOT_LOCKING=OFF",
                 "-DENABLE_OAUTH2=ON",
                 "-DENABLE_GTK=ON",
-                "-DENABLE_UOA=OFF",
                 "-DENABLE_GOA=ON",
                 "-DENABLE_GOOGLE=OFF",
                 "-DENABLE_EXAMPLES=OFF",
@@ -122,8 +121,8 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.0.tar.xz",
-                    "sha256": "d4d70e6658fb9e1f85639dcff315bbdddd3aa2de2ad069b1776af3fb9e9598ec"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.3.tar.xz",
+                    "sha256": "1f5f48173d0f288219d73d4f193cb921ae631932ba84030f05751c42bb003db2"
                }
             ]
         },
