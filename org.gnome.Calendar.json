@@ -122,8 +122,8 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.0.tar.xz",
-                    "sha256": "d4d70e6658fb9e1f85639dcff315bbdddd3aa2de2ad069b1776af3fb9e9598ec"
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.3.tar.xz",
+                    "sha256": "1f5f48173d0f288219d73d4f193cb921ae631932ba84030f05751c42bb003db2"
                }
             ]
         },
@@ -162,8 +162,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.36/gnome-calendar-3.36.1.tar.xz",
-                    "sha256" : "3b8c20b005c8934a223aa931399ffced244d06b9d749a071cc27c89540718362"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.36/gnome-calendar-3.36.2.tar.xz",
+                    "sha256" : "d0b05345c0555a085e6e5426eab49494aba2826c856eb06fd7fdb762ec0c4c1f"
                 }
             ]
         }
