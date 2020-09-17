@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.36",
+    "runtime-version" : "3.38",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -101,6 +101,7 @@
             "buildsystem" : "cmake-ninja",
             "cleanup" : [ "/share/GConf" ],
             "config-opts" : [
+                "-DENABLE_CANBERRA=OFF",
                 "-DENABLE_FILE_LOCKING=fcntl",
                 "-DENABLE_DOT_LOCKING=OFF",
                 "-DENABLE_OAUTH2=ON",
@@ -120,21 +121,27 @@
                 "-DWITH_OPENLDAP=OFF"
             ],
             "sources" : [
-               {
+                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.36/evolution-data-server-3.36.3.tar.xz",
-                    "sha256": "1f5f48173d0f288219d73d4f193cb921ae631932ba84030f05751c42bb003db2"
-               }
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.38/evolution-data-server-3.38.0.tar.xz",
+                    "sha256": "13689a7b55765806c4d5f3b05ef6c24b0bf9957b9ed9240c2dd09a2cdb13b0af"
+                }
             ]
         },
         {
             "name" : "libdazzle",
+            "config-opts" : [
+                "-Denable_gtk_doc=false",
+                "-Denable_tests=false",
+                "-Dwith_introspection=false",
+                "-Dwith_vapi=false"
+            ],
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.36/libdazzle-3.36.0.tar.xz",
-                    "sha256" : "82b31bbf550fc62970c78bf7f9d55e5fae5b8ea13b24fe2d13c8c6039409d958"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libdazzle/3.38/libdazzle-3.38.0.tar.xz",
+                    "sha256": "e18af28217943bcec106585298a91ec3da48aa3ad62fd0992f23f0c70cd1678f"
                 }
             ]
         },
@@ -161,9 +168,9 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.36/gnome-calendar-3.36.2.tar.xz",
-                    "sha256" : "d0b05345c0555a085e6e5426eab49494aba2826c856eb06fd7fdb762ec0c4c1f"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/3.38/gnome-calendar-3.38.0.tar.xz",
+                    "sha256": "c3684252a72bb59089d071514458a4aeba417f9551ff5d548e1a5984e47b4733"
                 }
             ]
         }
