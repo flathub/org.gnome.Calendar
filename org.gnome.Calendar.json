@@ -141,6 +141,12 @@
         {
             "name" : "libdazzle",
             "buildsystem" : "meson",
+            "config-opts" : [
+                "-Denable_gtk_doc=false",
+                "-Denable_tests=false",
+                "-Dwith_introspection=false",
+                "-Dwith_vapi=false"
+            ],
             "sources" : [
                 {
                     "type" : "archive",
