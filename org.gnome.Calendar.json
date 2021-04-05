@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "40",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -46,8 +46,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-online-accounts/3.36/gnome-online-accounts-3.36.0.tar.xz",
-                    "sha256" : "1c8f62990833ca41188dbb80c5e99d99b57a62608ca675bbcd37bc2244742f2e"
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.38/gnome-online-accounts-3.38.1.tar.xz",
+                    "sha256": "e18889d67806da84d1261bfed1cf61d2baec131d2d0d0a92f83ff33d4649358e"
                 }
             ]
         },
@@ -71,8 +71,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/3.36/libgweather-3.36.1.tar.xz",
-                    "sha256": "de2709f0ee233b20116d5fa9861d406071798c4aa37830ca25f5ef2c0083e450"
+                    "url": "https://download.gnome.org/sources/libgweather/40/libgweather-40.0.tar.xz",
+                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6"
                 }
             ]
         },
@@ -133,8 +133,8 @@
             "sources" : [
                {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.38/evolution-data-server-3.38.2.tar.xz",
-                    "sha256": "bf20785963efe3afa9d3b3a229cb61d1c60fa2fc11e29d632e050b3714cad455"
+                   "url": "https://download.gnome.org/sources/evolution-data-server/3.40/evolution-data-server-3.40.0.tar.xz",
+                   "sha256": "ed572f0cb6a2365809943449a8ccbee652681e2d9a1a7f4a54b60cbb53d87445"
                }
             ]
         },
@@ -150,27 +150,10 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/libdazzle/3.38/libdazzle-3.38.0.tar.xz",
-                    "sha256" : "e18af28217943bcec106585298a91ec3da48aa3ad62fd0992f23f0c70cd1678f"
+                    "url": "https://download.gnome.org/sources/libdazzle/3.40/libdazzle-3.40.0.tar.xz",
+                    "sha256": "dba99a7e65fa6662c012b306e5d0f99ff3b466a46059ea7aa0104aaf65ce4ba5"
                 }
             ]
-        },
-        {
-        "name": "libhandy",
-        "buildsystem": "meson",
-        "config-opts": [
-            "-Dglade_catalog=disabled",
-            "-Dtests=false",
-            "-Dexamples=false"
-        ],
-        "sources": [
-            {
-            "type" : "archive",
-            "url" : "https://gitlab.gnome.org/GNOME/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
-            "sha256" : "645355a009f23f254eaec7752b9489c3c2f5832397fcec75433a7e00efbfe52f"
-            }
-        ],
-        "cleanup": ["/bin"]
         },
         {
             "name" : "gnome-calendar",
@@ -178,8 +161,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/3.38/gnome-calendar-3.38.2.tar.xz",
-                    "sha256" : "d121bb34b08b6ea601f5dbba43a4b1613a6e5493fc0b1e2ecc90c666711a912d"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/40/gnome-calendar-40.0.tar.xz",
+                    "sha256" : "6838c3c2c0c729ab3869aa8619ee9afc896923cbae13f9246bbc36999e85e434"
                 }
             ]
         }
