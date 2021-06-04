@@ -161,8 +161,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/40/gnome-calendar-40.1.tar.xz",
-                    "sha256" : "d8cdf49f9eee1c3a3c6991c32f8563c4a7c4db0db7ca63ce51cc918e433b33a5"
+                    "url" : "https://download.gnome.org/sources/gnome-calendar/40/gnome-calendar-40.2.tar.xz",
+                    "sha256" : "9e3701fd4a0e589800d225203770644f31d5234655f54a83a85ff0556dd7ea33"
                 }
             ]
         }
