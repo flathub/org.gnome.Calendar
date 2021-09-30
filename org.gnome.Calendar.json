@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "40",
+    "runtime-version" : "41",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
@@ -46,8 +46,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.38/gnome-online-accounts-3.38.1.tar.xz",
-                    "sha256": "e18889d67806da84d1261bfed1cf61d2baec131d2d0d0a92f83ff33d4649358e"
+                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.0.tar.xz",
+                    "sha256": "585c4f979f6f543b77bfdb4fb01eb18ba25c2aec5b7866c676d929616fb2c3fa"
                 }
             ]
         },
@@ -91,8 +91,9 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/libical/libical/releases/download/v3.0.8/libical-3.0.8.tar.gz",
-                    "sha256" : "09fecacaf75ba5a242159e3a9758a5446b5ce4d0ab684f98a7040864e1d1286f"
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.10/libical-3.0.10.tar.gz",
+                    "sha256": "f933b3e6cf9d56a35bb5625e8e4a9c3a50239a85aea05ed842932c1a1dc336b4"
+
                 }
             ]
         },
@@ -132,9 +133,9 @@
             ],
             "sources" : [
                {
-                    "type": "archive",
-                   "url": "https://download.gnome.org/sources/evolution-data-server/3.40/evolution-data-server-3.40.0.tar.xz",
-                   "sha256": "ed572f0cb6a2365809943449a8ccbee652681e2d9a1a7f4a54b60cbb53d87445"
+                   "type": "archive",
+                   "url": "https://download.gnome.org/sources/evolution-data-server/3.42/evolution-data-server-3.42.0.tar.xz",
+                   "sha256": "e8fdd3bc47a07d6f8a3052bbcae880f20f6dbc4f6973a8e90d00169bb99b1635"
                }
             ]
         },
@@ -150,8 +151,9 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url": "https://download.gnome.org/sources/libdazzle/3.40/libdazzle-3.40.0.tar.xz",
-                    "sha256": "dba99a7e65fa6662c012b306e5d0f99ff3b466a46059ea7aa0104aaf65ce4ba5"
+                    "url": "https://download.gnome.org/sources/libdazzle/3.42/libdazzle-3.42.0.tar.xz",
+                    "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925"
+
                 }
             ]
         },
@@ -161,8 +163,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/40/gnome-calendar-40.2.tar.xz",
-                    "sha256" : "9e3701fd4a0e589800d225203770644f31d5234655f54a83a85ff0556dd7ea33"
+                    "url" : "https://download-fallback.gnome.org/sources/gnome-calendar/41/gnome-calendar-41.0.tar.xz",
+                    "sha256" : "73ac923c6618bd0957d6b7c012a00a47bff67ee934249358817433772ceb193f"
                 }
             ]
         }
