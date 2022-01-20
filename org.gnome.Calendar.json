@@ -91,8 +91,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.10/libical-3.0.10.tar.gz",
-                    "sha256": "f933b3e6cf9d56a35bb5625e8e4a9c3a50239a85aea05ed842932c1a1dc336b4"
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.13/libical-3.0.13.tar.gz",
+                    "sha256": "02543b08897f3b75c76c360a335900ccfb027d2f5120176c777340e67e763ad4"
 
                 }
             ]
