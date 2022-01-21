@@ -92,8 +92,12 @@
                 {
                     "type" : "archive",
                     "url": "https://github.com/libical/libical/releases/download/v3.0.13/libical-3.0.13.tar.gz",
-                    "sha256": "02543b08897f3b75c76c360a335900ccfb027d2f5120176c777340e67e763ad4"
-
+                    "sha256": "02543b08897f3b75c76c360a335900ccfb027d2f5120176c777340e67e763ad4",
+                    "x-checker-data": {
+                        "type": "rotating-url",
+                        "url": "https://github.com/libical/libical/releases/latest",
+                        "pattern": "https://github.com/libical/libical/releases/download/v([0-9.]+)/libical-([0-9.]+).tar.gz"
+                    }
                 }
             ]
         },
