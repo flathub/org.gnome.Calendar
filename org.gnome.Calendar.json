@@ -47,7 +47,11 @@
                 {
                     "type" : "archive",
                     "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.0.tar.xz",
-                    "sha256": "585c4f979f6f543b77bfdb4fb01eb18ba25c2aec5b7866c676d929616fb2c3fa"
+                    "sha256": "585c4f979f6f543b77bfdb4fb01eb18ba25c2aec5b7866c676d929616fb2c3fa",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-online-accounts"
+                    }
                 }
             ]
         },
@@ -58,7 +62,11 @@
                 {
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.2.tar.xz",
-                    "sha256" : "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1"
+                    "sha256" : "01fe84cfa0be50c6e401147a2bc5e2f1574326e2293b55c69879be3e82030fd1",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "geocode-glib"
+                    }
                 }
             ]
         },
@@ -72,7 +80,11 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libgweather/40/libgweather-40.0.tar.xz",
-                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6"
+                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libgweather"
+                    }
                 }
             ]
         },
@@ -135,7 +147,11 @@
                {
                    "type": "archive",
                    "url": "https://download.gnome.org/sources/evolution-data-server/3.42/evolution-data-server-3.42.0.tar.xz",
-                   "sha256": "e8fdd3bc47a07d6f8a3052bbcae880f20f6dbc4f6973a8e90d00169bb99b1635"
+                   "sha256": "e8fdd3bc47a07d6f8a3052bbcae880f20f6dbc4f6973a8e90d00169bb99b1635",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "evolution-data-server"
+                    }
                }
             ]
         },
@@ -152,8 +168,11 @@
                 {
                     "type" : "archive",
                     "url": "https://download.gnome.org/sources/libdazzle/3.42/libdazzle-3.42.0.tar.xz",
-                    "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925"
-
+                    "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libdazzle"
+                    }
                 }
             ]
         },
@@ -164,7 +183,11 @@
                 {
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-calendar/41/gnome-calendar-41.2.tar.xz",
-                    "sha256" : "956b2f190322651c67fe667223896f8aa5acf33b70ada5a3b05a5361bda6611a"
+                    "sha256" : "956b2f190322651c67fe667223896f8aa5acf33b70ada5a3b05a5361bda6611a",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-calendar"
+                    }
                 }
             ]
         }
