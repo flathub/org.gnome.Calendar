@@ -1,18 +1,18 @@
 {
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "42",
     "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
     "finish-args" : [
+        "--device=dri",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--system-talk-name=org.freedesktop.login1",
         "--system-talk-name=org.freedesktop.timedate1",
-        "--system-talk-name=org.freedesktop.GeoClue2",
         "--talk-name=org.gnome.ControlCenter",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook9",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
@@ -37,23 +37,13 @@
     "modules" : [
         "shared-modules/intltool/intltool-0.51.json",
         {
-            "name" : "gnome-online-accounts",
-            "config-opts" : [
-                "--disable-telepathy",
-                "--disable-documentation",
-                "--disable-backend"
-            ],
-            "sources" : [
-                {
-                    "type" : "archive",
-                    "url": "https://download.gnome.org/sources/gnome-online-accounts/3.40/gnome-online-accounts-3.40.0.tar.xz",
-                    "sha256": "585c4f979f6f543b77bfdb4fb01eb18ba25c2aec5b7866c676d929616fb2c3fa"
-                }
-            ]
-        },
-        {
             "name" : "geocode-glib",
             "buildsystem" : "meson",
+            "config-opts" : [
+                "-Denable-gtk-doc=false",
+                "-Denable-introspection=false",
+                "-Denable-installed-tests=false"
+            ],
             "sources" : [
                 {
                     "type" : "archive",
@@ -65,14 +55,16 @@
         {
             "name" : "libgweather",
             "buildsystem" : "meson",
-            "cleanup" : [
-                "/share/gtk-doc"
+            "config-opts" : [
+                "-Dglade_catalog=false",
+                "-Denable_vala=false",
+                "-Dgtk_doc=false"
             ],
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/40/libgweather-40.0.tar.xz",
-                    "sha256": "ca4e8f2a4baaa9fc6d75d8856adb57056ef1cd6e55c775ba878ae141b6276ee6"
+                    "url": "https://download.gnome.org/sources/libgweather/4.0/libgweather-4.0.0.tar.xz",
+                    "sha256": "440d44801b6f72b48c676e5e37f9109cfee1394fd74cc92725e1b1ba4fae834c"
                 }
             ]
         },
@@ -98,62 +90,30 @@
             ]
         },
         {
-            "name" : "libcanberra-gtk3",
-            "buildsystem" : "autotools",
-            "sources" : [
-                {
-                    "type" : "archive",
-                    "url" : "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
-                    "sha256" : "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
-                }
-            ]
-        },
-        {
             "name" : "evolution-data-server",
             "buildsystem" : "cmake-ninja",
             "cleanup" : [ "/share/GConf" ],
             "config-opts" : [
-                "-DENABLE_FILE_LOCKING=fcntl",
+                "-DENABLE_CANBERRA=OFF",
+                "-DENABLE_GOA=OFF",
                 "-DENABLE_DOT_LOCKING=OFF",
-                "-DENABLE_OAUTH2=ON",
+                "-DENABLE_FILE_LOCKING=fcntl",
                 "-DENABLE_GTK=ON",
-                "-DENABLE_UOA=OFF",
-                "-DENABLE_GOA=ON",
                 "-DENABLE_GOOGLE=OFF",
-                "-DENABLE_EXAMPLES=OFF",
-                "-DENABLE_INTROSPECTION=OFF",
                 "-DENABLE_VALA_BINDINGS=OFF",
+                "-DENABLE_WEATHER=OFF",
+                "-DWITH_OPENLDAP=OFF",
+                "-DWITH_LIBDB=OFF",
+                "-DENABLE_INTROSPECTION=OFF",
                 "-DENABLE_INSTALLED_TESTS=OFF",
                 "-DENABLE_GTK_DOC=OFF",
-                "-DWITH_PRIVATE_DOCS=OFF",
-                "-DWITH_PHONENUMBER=OFF",
-                "-DWITH_SYSTEMDUSERUNITDIR=OFF",
-                "-DWITH_LIBDB=OFF",
-                "-DWITH_OPENLDAP=OFF"
-            ],
-            "sources" : [
-               {
-                   "type": "archive",
-                   "url": "https://download.gnome.org/sources/evolution-data-server/3.42/evolution-data-server-3.42.0.tar.xz",
-                   "sha256": "e8fdd3bc47a07d6f8a3052bbcae880f20f6dbc4f6973a8e90d00169bb99b1635"
-               }
-            ]
-        },
-        {
-            "name" : "libdazzle",
-            "buildsystem" : "meson",
-            "config-opts" : [
-                "-Denable_gtk_doc=false",
-                "-Denable_tests=false",
-                "-Dwith_introspection=false",
-                "-Dwith_vapi=false"
+                "-DENABLE_EXAMPLES=OFF"
             ],
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url": "https://download.gnome.org/sources/libdazzle/3.42/libdazzle-3.42.0.tar.xz",
-                    "sha256": "eae67a3b3d9cce408ee9ec0ab6adecb83e52eb53f9bc93713f4df1e84da16925"
-
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.44/evolution-data-server-3.44.0.tar.xz",
+                    "sha256": "0d8881b5c51e1b91761b1945db264a46aabf54a73eea1ca8f448b207815d582e"
                 }
             ]
         },
@@ -162,9 +122,9 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-calendar/41/gnome-calendar-41.2.tar.xz",
-                    "sha256" : "956b2f190322651c67fe667223896f8aa5acf33b70ada5a3b05a5361bda6611a"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/42/gnome-calendar-42.0.tar.xz",
+                    "sha256": "b63f73f55032fc1390442f94cdf6b3cab9c91c774ddd2e5c61ecfec9d2c5e9aa"
                 }
             ]
         }
