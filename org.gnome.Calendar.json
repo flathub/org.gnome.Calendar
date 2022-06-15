@@ -139,8 +139,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/42/gnome-calendar-42.0.tar.xz",
-                    "sha256" : "b63f73f55032fc1390442f94cdf6b3cab9c91c774ddd2e5c61ecfec9d2c5e9aa",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/42/gnome-calendar-42.2.tar.xz",
+                    "sha256" : "ae7cc63aae96a02aa599b6d6a348585f4e76f729536f39efb744302b05b5fbbd",
                     "x-checker-data" : {
                         "type" : "gnome",
                         "name" : "gnome-calendar"
