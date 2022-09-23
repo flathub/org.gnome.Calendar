@@ -163,6 +163,7 @@
                     "sha256" : "09e5c0f9360f3f856deaa7c0db30f5dab0151180df4183807c6cf3602992f5cc",
                     "x-checker-data" : {
                         "type" : "gnome",
+                        "is-important": true,
                         "name" : "gnome-calendar"
                     }
                 }
