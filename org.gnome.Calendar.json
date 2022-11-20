@@ -108,15 +108,18 @@
             "buildsystem" : "meson",
             "config-opts" : [
                 "-Dgtk_doc=false",
-                "-Dgtk4=false",
                 "-Dintrospection=false",
                 "-Dvapi=false"
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gcr.git",
-                    "branch" : "master"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gcr/4.0/gcr-4.0.0.tar.xz",
+                    "sha256" : "c45855924f0ee7bab43e2dd38bfafd2ac815c6e9864341c0161e171173dcec7c",
+                    "x-checker-data" : {
+                        "type" : "gnome",
+                        "name" : "gcr"
+                    }
                 }
             ]
         },
