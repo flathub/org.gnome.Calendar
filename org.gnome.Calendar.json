@@ -2,7 +2,6 @@
     "app-id" : "org.gnome.Calendar",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "43",
-    "branch": "stable",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-calendar",
     "finish-args" : [
