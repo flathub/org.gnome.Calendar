@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.2/libgweather-4.2.0.tar.xz",
-                    "sha256": "af8a812da0d8976a000e1d62572c256086a817323fbf35b066dbfdd8d2ca6203",
+                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz",
+                    "sha256": "366e866ff2a708b894cfea9475b8e8ff54cb3e2b477ea72a8ade0dabee5f48a4",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -153,8 +153,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.48/evolution-data-server-3.48.1.tar.xz",
-                    "sha256": "5ce62c1e67f2789342a7f4a035b102f74e62ed85f60e81a5b7f3e04165404dff",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.0.tar.xz",
+                    "sha256": "c9f793d99ba188ef8cf2891b8062d7e570e3cba22b8cfc46eb561c6cecc81d3a",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/44/gnome-calendar-44.1.tar.xz",
-                    "sha256": "30a1b738b670bd124e462468e671187fc0dba5b9ee2af6a8ebd9e7874bf3b77e",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/45/gnome-calendar-45.0.tar.xz",
+                    "sha256": "8c1483cbba4388db410875ed09d64e9003f929b555d704076a6fe7bd7c1e65b2",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
