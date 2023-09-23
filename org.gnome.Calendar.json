@@ -121,6 +121,7 @@
                     "sha256": "9ceaad29284ba919b9216e2888c18ec67240c2c93b3a4856bc5488bbc1f3a383",
                     "x-checker-data": {
                         "type": "gnome",
+                        "stable-only": false,
                         "name": "gcr"
                     }
                 }
