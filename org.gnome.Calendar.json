@@ -117,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gcr/4.1/gcr-4.1.0.tar.xz",
-                    "sha256": "9ceaad29284ba919b9216e2888c18ec67240c2c93b3a4856bc5488bbc1f3a383",
+                    "url": "https://download.gnome.org/sources/gcr/4.2/gcr-4.2.1.tar.xz",
+                    "sha256": "ed783b5c80373cd058c02ea9e3e2a64e558599ca190a5abd598122e479967de5",
                     "x-checker-data": {
                         "type": "gnome",
                         "stable-only": false,
@@ -154,8 +154,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.1.tar.xz",
-                    "sha256": "91f4ffc38a1b8d2fe8939834449ac541c0bff4a39b444edc2a9529344a28e98a",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.0.tar.xz",
+                    "sha256": "a5d5e11c7a1e585846efe260f3c1c61a78399bd8b623bfd79ac1c0ffea7bde06",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -169,8 +169,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/45/gnome-calendar-45.1.tar.xz",
-                    "sha256": "7fa8507543865aa7432bb5319830c87158b5447ca09cca45b607dc6796c71008",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/46/gnome-calendar-46.0.tar.xz",
+                    "sha256": "5e21960c174bd8606d9089bf79c70f31070ab4837919878b00db2f14af9fe718",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
