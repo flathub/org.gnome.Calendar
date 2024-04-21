@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.0.tar.xz",
-                    "sha256": "366e866ff2a708b894cfea9475b8e8ff54cb3e2b477ea72a8ade0dabee5f48a4",
+                    "url": "https://download.gnome.org/sources/libgweather/4.4/libgweather-4.4.2.tar.xz",
+                    "sha256": "a6e427b4770ada48945f3aa906af710fc833cff0d42df91f1828302740d794ec",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libgweather",
@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.gz",
-                    "sha256": "bcda9a6db6870240328752854d1ea475af9bbc6356e6771018200e475e5f781b",
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.gz",
+                    "sha256": "72b7dc1a5937533aee5a2baefc990983b66b141dd80d43b51f80aced4aae219c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -117,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gcr/4.2/gcr-4.2.1.tar.xz",
-                    "sha256": "ed783b5c80373cd058c02ea9e3e2a64e558599ca190a5abd598122e479967de5",
+                    "url": "https://download.gnome.org/sources/gcr/4.3/gcr-4.3.0.tar.xz",
+                    "sha256": "c3ee8728e4364b0397f435fa20f92f901ab139d2b264f4e059d67b3c0f43cd36",
                     "x-checker-data": {
                         "type": "gnome",
                         "stable-only": false,
@@ -154,8 +154,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.0.tar.xz",
-                    "sha256": "a5d5e11c7a1e585846efe260f3c1c61a78399bd8b623bfd79ac1c0ffea7bde06",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.52/evolution-data-server-3.52.1.tar.xz",
+                    "sha256": "825b3d7d5468440a67d11dd2a23933960c07b9eecc797bb125843cb2c870a348",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -169,8 +169,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/46/gnome-calendar-46.0.tar.xz",
-                    "sha256": "5e21960c174bd8606d9089bf79c70f31070ab4837919878b00db2f14af9fe718",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/46/gnome-calendar-46.1.tar.xz",
+                    "sha256": "9861ff7b8abd5b7b20690ba55eb7542c7ec534b566269e29b5b1e858c1610897",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
