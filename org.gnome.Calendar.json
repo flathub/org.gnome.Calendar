@@ -20,7 +20,6 @@
         "--talk-name=org.gnome.evolution.dataserver.Subprocess.Backend.*",
         "--talk-name=org.gnome.OnlineAccounts",
         "--talk-name=org.gnome.SettingsDaemon.Color",
-        "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/org/gnome/calendar/"
     ],
     "cleanup": [
