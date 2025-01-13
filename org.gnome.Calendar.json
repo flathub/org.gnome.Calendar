@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.gz",
-                    "sha256": "72b7dc1a5937533aee5a2baefc990983b66b141dd80d43b51f80aced4aae219c",
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.19/libical-3.0.19.tar.gz",
+                    "sha256": "6a1e7f0f50a399cbad826bcc286ce10d7151f3df7cc103f641de15160523c73f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -117,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gcr/4.3/gcr-4.3.0.tar.xz",
-                    "sha256": "c3ee8728e4364b0397f435fa20f92f901ab139d2b264f4e059d67b3c0f43cd36",
+                    "url": "https://download.gnome.org/sources/gcr/4.3/gcr-4.3.90.3.tar.xz",
+                    "sha256": "a3242305711f9169c613d4b505fb74cef182ab8ba3040c094d5d9df153c168a6",
                     "x-checker-data": {
                         "type": "gnome",
                         "stable-only": false,
@@ -154,8 +154,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.54/evolution-data-server-3.54.0.tar.xz",
-                    "sha256": "a54b47b977a97030f738a412f4f5d5b2efbef5e0ebe8929b7cce00ac54681084",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.54/evolution-data-server-3.54.3.tar.xz",
+                    "sha256": "5108dc38ee5cc1f8ef9155e87f6c4129f9644550a0962c5ae23ff807b57cb8d0",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -169,8 +169,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/47/gnome-calendar-47.0.tar.xz",
-                    "sha256": "3b03313f1c4d12dc821e07e209d1596d53eafa255d492d2ce5abf92ed1b51e76",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/48/gnome-calendar-48.alpha2.tar.xz",
+                    "sha256": "95ca26ec2280e47a2a4664ecd78c883d11e6df382b35e228d87d4df69d7963f9",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
