@@ -175,6 +175,10 @@
                         "is-important": true,
                         "name": "gnome-calendar"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "metainfo-Add-release-notes-for-48.0.patch"
                 }
             ]
         }
