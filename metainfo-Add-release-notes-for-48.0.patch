@@ -1,0 +1,43 @@
+From 4041b9fc2846067b6139155367c49d94245451c7 Mon Sep 17 00:00:00 2001
+From: Maximiliano Sandoval <msandova@gnome.org>
+Date: Wed, 19 Mar 2025 20:59:28 +0100
+Subject: [PATCH 2/2] metainfo: Add release notes for 48.0
+
+Signed-off-by: Maximiliano Sandoval <msandova@gnome.org>
+---
+ .../org.gnome.Calendar.metainfo.xml.in.in     | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+diff --git a/src/appdata/org.gnome.Calendar.metainfo.xml.in.in b/src/appdata/org.gnome.Calendar.metainfo.xml.in.in
+index 773006dc..b5f65b77 100644
+--- a/src/appdata/org.gnome.Calendar.metainfo.xml.in.in
++++ b/src/appdata/org.gnome.Calendar.metainfo.xml.in.in
+@@ -86,6 +86,25 @@
+ 
+   <releases>
+ 
++    <release date="2025-03-19" version="48.0" type="stable">
++      <description>
++        <ul>
++          <li>Improve performance of the Month view</li>
++          <li>Round temperatures to integer precision in weather forecast,
++          to save space and reflect the approximate nature of the forecasts</li>
++          <li>Allow selecting timezones for the start and end times of events</li>
++          <li>Fix calendar name overflow in the calendars popover list</li>
++          <li>Auto-hide weather temperature labels in Month view when space is insufficient</li>
++          <li>Many design improvements to the event editor dialog, such as a rearranged
++          all-day / timed selection, moving the event calendar to a row, and more.</li>
++          <li>Show a banner in the event editor when the calendar is read-only</li>
++          <li>Improve capitalization of title strings in the Week view header</li>
++          <li>Fix event order in the sidebar</li>
++          <li>Updated translations</li>
++        </ul>
++      </description>
++    </release>
++
+     <release date="2025-03-01" version="48~rc" type="development" />
+     <release date="2025-02-03" version="48~beta" type="development" />
+     <release date="2025-01-13" version="48~alpha2" type="development" />
+-- 
+2.49.0
+
