@@ -167,8 +167,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/48/gnome-calendar-48.0.tar.xz",
-                    "sha256": "e69a5a66be820105a4d823d4dba9b4e6ef9f6e7523978aaf33361ebbb993e604",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/48/gnome-calendar-48.1.tar.xz",
+                    "sha256": "06ceadd5c00be8e358181d421ecf2682ce0aea2fcb12d903b30d29ca33289f02",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
