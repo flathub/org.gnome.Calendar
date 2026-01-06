@@ -152,8 +152,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.58/evolution-data-server-3.58.0.tar.xz",
-                    "sha256": "a2b5a0b8db11b728edc1d6f1c229dc2711962b7a87c0384221dac8d96000cef7",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.58/evolution-data-server-3.58.2.tar.xz",
+                    "sha256": "6942ecfc39ebb36b0b4363adff00771c1c2dfa34f54e80ec92c3baa3feb020fb",
                     "x-checker-data": {
                         "type": "gnome",
                         "version-scheme": "odd-minor-is-unstable",
@@ -168,8 +168,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/49/gnome-calendar-49.0.1.tar.xz",
-                    "sha256": "e0bfe4ea109422dada0745dd8f8c0e0230ab88207710d1c07e245322cf913ff2",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/49/gnome-calendar-49.1.tar.xz",
+                    "sha256": "0c1115ab294d532c4c19f56ce0d7aee53f8ea32b1430209dd1d9eda47a83d2c2",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
