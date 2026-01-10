@@ -156,6 +156,7 @@
                     "sha256": "a2b5a0b8db11b728edc1d6f1c229dc2711962b7a87c0384221dac8d96000cef7",
                     "x-checker-data": {
                         "type": "gnome",
+                        "version-scheme": "odd-minor-is-unstable",
                         "name": "evolution-data-server"
                     }
                 }
