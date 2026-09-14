@@ -1,7 +1,7 @@
 {
-    "id": "org.gnome.Calendar",
+    "app-id": "org.gnome.Calendar",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-calendar",
     "finish-args": [
@@ -34,7 +34,6 @@
         "*.a"
     ],
     "modules": [
-        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "geocode-glib",
             "buildsystem": "meson",
@@ -134,8 +133,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gcr/4.4/gcr-4.4.0.1.tar.xz",
-                    "sha256": "0c3c341e49f9f4f2532a4884509804190a0c2663e6120360bb298c5d174a8098",
+                    "url": "https://download.gnome.org/sources/gcr/4.4/gcr-4.4.1.tar.xz",
+                    "sha256": "c4442c15d4330f17a1f5194df08c576877af68412ab2521446a93bd5e24c931b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gcr"
@@ -165,13 +164,14 @@
                 "-DENABLE_INSTALLED_TESTS=OFF",
                 "-DENABLE_GTK_DOC=OFF",
                 "-DENABLE_EXAMPLES=OFF",
-                "-DENABLE_OAUTH2_WEBKITGTK4=OFF"
+                "-DENABLE_OAUTH2_WEBKITGTK4=OFF",
+                "-DENABLE_OAUTH2_WEBKITGTK=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.60/evolution-data-server-3.60.0.tar.xz",
-                    "sha256": "e04e383e0e28b24d91b3d373f6ffb87a5d46ba3845c7999c412cc7813adf6c18",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.62/evolution-data-server-3.62.0.tar.xz",
+                    "sha256": "78be88e9a511f5afe7ff2e363eade84b622dd0282647fc576edb2d4ff2962cba",
                     "x-checker-data": {
                         "type": "gnome",
                         "version-scheme": "odd-minor-is-unstable",
@@ -186,8 +186,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-calendar/50/gnome-calendar-50.0.tar.xz",
-                    "sha256": "4b75df071a52d98fb35e647d018030129d24d9007790d02457746c98617aeab0",
+                    "url": "https://download.gnome.org/sources/gnome-calendar/51/gnome-calendar-51.0.tar.xz",
+                    "sha256": "77c290450c40834392cdea2c40451561e98f43d5dae93cd9e915051a6708dc30",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
